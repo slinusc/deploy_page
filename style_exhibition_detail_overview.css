@@ -1,0 +1,203 @@
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 40px; /* Mehr Abstand links und rechts */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Erbt die Farbe vom Eltern-Element */
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Richtet die Navigation nach rechts aus */
+  width: 100%;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* VergrÃ¶ÃŸert den Abstand zwischen den Links */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* StÃ¤ndiger Unterstrich fÃ¼r den "Home"-Link */
+nav ul li:nth-child(2) a {
+  text-decoration: underline;
+}
+
+/* Unterstrich bei Hover, aber Schriftfarbe bleibt schwarz */
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #333; /* Schriftfarbe bleibt schwarz */
+}
+
+
+
+
+
+
+/* Filter Links Section */
+.filter-links {
+  display: flex;
+  justify-content: flex-start; /* Links ausrichten */
+  gap: 60px; /* Abstand zwischen den Links */
+  margin-left: 50px; /* Abstand von der linken Seite */
+  margin-right: 50px; /* Abstand von der rechten Seite */
+  margin-bottom: 0px; /* Abstand nach unten */
+  border-top: 1px solid #d7d6d6; /* Linie oben */
+  border-bottom: 1px solid #d7d6d6; /* Linie unten */
+  padding: 10px 0; /* Abstand nach oben und unten */
+}
+
+.filter-link {
+  font-size: 19px;
+  font-weight: bold;
+  color: #9c9c9c;
+  cursor: pointer; /* Zeiger-Icon beim Hover */
+  text-decoration: none;
+}
+
+.filter-link.active {
+  text-decoration: underline; /* Unterstrich für aktive Kategorie */
+  color: #333; /* Farbe bleibt gleich */
+}
+
+.filter-link:hover {
+  color: #333; 
+}
+
+.bild_oben{
+  margin: 50px 0px 30px 50px;
+  max-height: 400px;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.bild-text-container {
+  display: flex; /* Flexbox aktivieren */
+  justify-content: space-between; /* Platz zwischen Bild und Text */
+  align-items: center; /* Vertikale Zentrierung */
+  gap: 0px; /* Abstand zwischen Bild und Text */
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.bild-text-container .bild_oben {
+  width: 60%; /* Bild nimmt 60% der Breite ein */
+  height: auto; /* Höhe proportional */
+  margin-left: 50px; /* 50px Abstand links */
+}
+
+.bild-text-container .text-rechts {
+  width: 40%; /* Text nimmt 40% der Breite ein */
+  color: #767676; /* Textfarbe */
+  height: 556px;
+}
+
+
+
+
+.headline{
+  margin-left: 50px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-family: arial;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 600px;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #767676;
+  margin-bottom: 59px;
+  margin-left: 50px;
+  margin-right: 540px;
+}
+
+.text-oben{
+  margin-top: 420px;
+  margin-right: 50px;
+  color: #a9a8a8;
+  /* font-size: 15px; */
+}
+
+.text-unten{
+  /* font-weight: 600; */
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 40px;
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Inhalt horizontal zentrieren */
+  align-items: center; /* Inhalt vertikal zentrieren */
+  color: #333;
+  text-align: center; /* Text zentrieren */
+}
+
+footer p {
+  margin: 0; /* Entfernt den Standardabstand */
+  padding: 16px 50px;
+}
+
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

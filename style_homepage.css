@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 40px; /* Mehr Abstand links und rechts */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Richtet die Navigation nach rechts aus */
+  width: 100%;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* VergrÃ¶ÃŸert den Abstand zwischen den Links */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* StÃ¤ndiger Unterstrich fÃ¼r den "Home"-Link */
+nav ul li:first-child a {
+  text-decoration: underline;
+}
+
+/* Unterstrich bei Hover, aber Schriftfarbe bleibt schwarz */
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #333; /* Schriftfarbe bleibt schwarz */
+}
+
+/* Landing Page Styles */
+.landing-page {
+  text-align: center;
+  position: relative;
+  height: 100vh; /* Vollbild-HÃ¶he */
+  overflow: hidden; /* Verhindert, dass das Bild Ã¼ber den Bildschirm hinaus geht */
+}
+
+.landing-page img {
+  width: 100%;
+  height: 100%; /* Dehnt das Bild Ã¼ber den gesamten Bildschirm aus */
+  object-fit: cover; /* Stellt sicher, dass das Bild das gesamte Container-Bereich ausfÃ¼llt */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Welcome Text */
+.welcome-text {
+  position: absolute;
+  top: 62%; /* Weiter unten als vorher */
+  right: 10%; /* Weiter links als vorher */
+  color: white;
+  font-size: 32px;
+  text-align: left; /* Text nach links ausrichten */
+  font-family: arial;
+  font-weight: 600;
+}
+
+/* More About Text */
+.more-about a {
+  position: absolute;
+  top: 72%; /* Weiter unten als der "Welcome"-Text */
+  right: 10%; /* Weiter links als vorher */
+  color: white !important;
+  font-size: 22px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 2px;
+  height: 20px;
+}
+
+
+
+
+.more-about:hover a {
+  text-decoration: underline; /* Unterstreichen beim Hover */
+}
+
+.wrapper {
+  max-height: none;
+  display: flex;
+  overflow-x: auto;
+  padding-left: 50px;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper .item {
+  min-width: 500px;
+  margin-top: 10px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column; /* Bilder und Text werden untereinander angeordnet */
+  justify-content: center;
+  align-items: left;
+}
+
+.wrapper .item img {
+  max-width: 100%; /* Bild passt sich der Breite der Box an */
+  max-height: 100%; /* Bild passt sich der Höhe der Box an */
+  object-fit: cover; /* Bild wird skaliert, ohne verzerrt zu werden */
+}
+
+.wrapper .text {
+  text-align: left; /* Text wird linksbündig ausgerichtet */
+  margin-top: 10px; /* Abstand zum Bild */
+  padding-left: 0px; /* Text mit Abstand zum Rand */
+  font-size: 16px; /* Schriftgröße */
+  color: #333; /* Textfarbe */
+  font-family: arial;
+  font-weight: lighter;
+  opacity: 60%;
+}
+
+img:hover{
+cursor: pointer;
+}
+
+.überschriftText{
+  margin-top: 15px; /* Abstand zum Bild */
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+  display: block; /* Optional: Macht den gesamten Bereich klickbar */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+  color: #333;
+}
+
+.überschriftText:hover{
+  text-decoration: underline; /* Unterstreichung bei Hover-Effekt */
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* WICHTIG FÜR LINKS */
+a{
+height: 291.66px;
+color: #333;
+text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+a:link, a:visited {
+  color: #333; /* Farbe auf Schwarz setzen */
+  text-decoration: none; /* Unterstreichung entfernen */
+}
+
+
+.container {
+  display: flex;              /* Flexbox aktivieren */
+  justify-content: space-between; /* Platz zwischen den Elementen */
+  padding: 20px;              /* Optional: Abstand zum Rand */
+  align-items: baseline;
+}
+
+.container{
+  padding: 0;
+}
+.exhibitons_events{
+  margin-left: 50px;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  font-family: arial;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 600px;
+}
+
+.viewall{
+  text-align: right;
+  margin-right: 50px ;
+  margin-top: 0px ;
+  margin-bottom: 0px ;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.viewall:hover {
+  text-decoration: underline; /* Unterstreichung bei Hover-Effekt */
+  color: #333;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute; /* Absolut positioniert relativ zum nächsten übergeordneten Container */
+  top: 148%; /* Vertikale Zentrierung */
+  transform: translateY(-50%);
+  background: #f1f1f1; /* Halbtransparenter Hintergrund */
+  color: #333; /* Textfarbe */
+  font-size: 24px; /* Schriftgröße */
+  padding: 10px; /* Abstand innerhalb des Pfeils */
+  cursor: pointer; /* Zeigt Hand-Cursor bei Hover */
+  z-index: 10; /* Überlagert andere Inhalte */
+  display: none; /* Anfangs ausgeblendet */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  align-items: center; 
+  justify-content: center;
+}
+
+.arrow.left {
+  left: 25px; /* Abstand zum linken Rand */
+}
+
+.arrow.right {
+  right: 25px; /* Abstand zum rechten Rand */
+}
+
+.headline{
+  margin-top: 65px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  font-family: arial;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 600px;
+}
+
+.wrapper2 {
+  max-height: none;
+  display: flex;
+  overflow-x: auto;
+  padding-left: 50px;
+  margin-bottom: 65px;
+}
+
+.wrapper2::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper2 .item2 {
+  position: relative; /* Erlaubt das Positionieren des Textes relativ zum Elterncontainer */
+  min-width: 175px;
+  height: 300px;
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 250px; /* Feste Breite */
+  overflow: hidden; /* Bildteile auÃŸerhalb des Containers ausblenden */
+}
+
+.wrapper2 .item2 img {
+  width: 100%; /* Bild nimmt die gesamte Breite ein */
+  height: 100%; /* Bild nimmt die gesamte Höhe ein */
+  object-fit: cover; /* Bild wird skaliert, ohne verzerrt zu werden */
+  transition: transform 0.5s ease; /* Weiche Transition beim Hover */
+  /* transform: scale(1); StandardgrÃ¶ÃŸe */
+}
+
+.wrapper2 .item2:hover img {
+  transform: scale(1.1); /* VergrÃ¶ÃŸern beim Hover */
+}
+
+
+.wrapper2 .item2 .overlay-text {
+  position: absolute; /* Ermöglicht freies Platzieren */
+  top: 80%; /* Vertikale Mitte */
+  left: 50%; /* Horizontale Mitte */
+  transform: translate(-50%, -50%); /* Korrektur der Verschiebung */
+  font-size: 23px;
+  font-weight:bold;
+  z-index: 1; /* Text über dem Bild */
+  pointer-events: none; /* Verhindert Interaktionen mit dem Text */
+  font-family: arial;
+  white-space: nowrap; /* Verhindert Zeilenumbruch */
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Text mit Schatten */
+  color: #ddd;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 40px;
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Inhalt horizontal zentrieren */
+  align-items: center; /* Inhalt vertikal zentrieren */
+  color: #333;
+  text-align: center; /* Text zentrieren */
+}
+
+footer a {
+  color: #333; /* Setze Links im Footer auf schwarz */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+.logo:hover{
+  cursor: pointer;
+}
+
+/* Kein Hover-Effekt für das Museum Image */
+.landing-page img {
+  cursor: default; /* Der Standard-Cursor bleibt erhalten */
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Erbt die Farbe vom Eltern-Element */
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+
+a{
+  height: 333.33px;
+}

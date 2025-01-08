@@ -1,0 +1,265 @@
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 40px; /* Mehr Abstand links und rechts */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  margin-top: 3.5px;
+  margin-bottom: 3.6px;
+
+}
+
+.link-rechts{
+  margin-top: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Richtet die Navigation nach rechts aus */
+  width: 100%;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 0 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* VergrÃ¶ÃŸert den Abstand zwischen den Links */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* StÃ¤ndiger Unterstrich fÃ¼r den "Home"-Link */
+nav ul li:nth-child(2) a {
+  text-decoration: underline;
+}
+
+/* Unterstrich bei Hover, aber Schriftfarbe bleibt schwarz */
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #333; /* Schriftfarbe bleibt schwarz */
+}
+
+
+
+
+
+
+/* Filter Links Section */
+.filter-links {
+  display: flex;
+  justify-content: flex-start; /* Links ausrichten */
+  gap: 60px; /* Abstand zwischen den Links */
+  margin-left: 50px; /* Abstand von der linken Seite */
+  margin-right: 50px; /* Abstand von der rechten Seite */
+  margin-bottom: 0px; /* Abstand nach unten */
+  border-top: 1px solid #d7d6d6; /* Linie oben */
+  border-bottom: 1px solid #d7d6d6; /* Linie unten */
+  padding: 10px 0; /* Abstand nach oben und unten */
+}
+
+.filter-link {
+  font-size: 19px;
+  font-weight: bold;
+  color: #9c9c9c;
+  cursor: pointer; /* Zeiger-Icon beim Hover */
+  text-decoration: none;
+}
+
+.filter-link.active {
+  text-decoration: underline; /* Unterstrich für aktive Kategorie */
+  color: #333; /* Farbe bleibt gleich */
+}
+
+.filter-link:hover {
+  color: #333; 
+}
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* Exhibitions Section */
+.exhibitions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.exhibition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px; /* Höhe der gesamten Box */
+  box-sizing: border-box;
+  background-color: #e0e0e0; /* Hintergrund der Box */
+  margin: 50px 50px; /* Größerer Abstand oben und unten */
+}
+
+.exhibition-text, .exhibition-image {
+  flex: 0 0 50%; /* Beide nehmen 50% der Breite ein */
+  height: 100%; /* Höhe der Box */
+  box-sizing: border-box;
+}
+
+.exhibition-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikale Zentrierung */
+  padding: 70px; /* Abstand links und rechts innerhalb der Textbox */
+  background-color: #f2f2f2; /* Hintergrundfarbe der Textbox */
+  text-align: left; /* Links ausgerichteter Text */
+}
+
+
+.exhibition-image img {
+  width: 100%; /* Bild füllt die Breite */
+  height: 100%; /* Bild füllt die Höhe */
+  object-fit: cover; /* Skaliert das Bild, ohne Verzerrung */
+  display: block;
+}
+
+
+.headline{
+  margin-left: 50px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-family: arial;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 600px;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #767676;
+  margin-bottom: 15px;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+
+.last-exhibition {
+  margin-bottom: 66px; /* Abstand von 50px unter der letzten Ausstellung */
+}
+
+
+
+
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 26px 0px 11px 0px;
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Inhalt horizontal zentrieren */
+  align-items: center; /* Inhalt vertikal zentrieren */
+  color: #333;
+  text-align: center; /* Text zentrieren */
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p{
+  color: #333;
+}
+
+
+
+a.learn-more{
+  color: #333;
+  text-decoration: none;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+img:hover{
+  cursor: pointer;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: inherit; /* Erbt die Farbe vom Eltern-Element */
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: inherit; /* Erbt die Farbe vom Eltern-Element */
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+
+  
+  

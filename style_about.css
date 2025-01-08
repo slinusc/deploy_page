@@ -1,0 +1,367 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+  width: 100%;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 40px; /* Mehr Abstand links und rechts */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  margin-top: 3.5px;
+  margin-bottom: 3.6px;
+
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit; /* Erbt die Farbe vom Eltern-Element */
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+
+.link-rechts{
+  margin-top: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Richtet die Navigation nach rechts aus */
+  width: 100%;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: 0 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* VergrÃ¶ÃŸert den Abstand zwischen den Links */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* StÃ¤ndiger Unterstrich fÃ¼r den "Home"-Link */
+nav ul li:nth-child(3) a {
+  text-decoration: underline;
+}
+
+/* Unterstrich bei Hover, aber Schriftfarbe bleibt schwarz */
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #333; /* Schriftfarbe bleibt schwarz */
+}
+
+
+
+
+
+
+/* Filter Links Section */
+.filter-links {
+  display: flex;
+  justify-content: flex-start; /* Links ausrichten */
+  gap: 60px; /* Abstand zwischen den Links */
+  margin-left: 50px; /* Abstand von der linken Seite */
+  margin-right: 50px; /* Abstand von der rechten Seite */
+  margin-bottom: 0px; /* Abstand nach unten */
+  border-top: 1px solid #d7d6d6; /* Linie oben */
+  border-bottom: 1px solid #d7d6d6; /* Linie unten */
+  padding: 10px 0; /* Abstand nach oben und unten */
+}
+
+.filter-link {
+  font-size: 19px;
+  font-weight: bold;
+  color: #9c9c9c;
+  cursor: pointer; /* Zeiger-Icon beim Hover */
+  text-decoration: none;
+}
+
+.filter-link.active {
+  text-decoration: underline; /* Unterstrich für aktive Kategorie */
+  color: #333; /* Farbe bleibt gleich */
+}
+
+.filter-link:hover {
+  color: #333; 
+}
+
+
+
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* Exhibitions Section */
+.exhibitions {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.exhibition {
+  display: flex;
+  align-items: flex-start; /* Inhalte oben ausrichten */
+  height: auto; /* Dynamische Höhe */
+  box-sizing: border-box;
+  margin: 38px 50px 50px 50px;
+  gap: 20px; /* Optional: Abstand zwischen Bild und Text */
+}
+
+
+.exhibition-text, .exhibition-image {
+  flex: 0 0 50%; /* Beide nehmen 50% der Breite ein */
+  height: 60%; /* Höhe der Box */
+  box-sizing: border-box;
+}
+
+.exhibition-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikale Zentrierung */
+  padding: 0px 0px; /* Abstand links und rechts innerhalb der Textbox */
+  text-align: left; /* Links ausgerichteter Text */
+  margin-bottom: 0px;
+}
+
+
+.exhibition-image img {
+  width: 83%; /* Bild füllt die Breite */
+  height: 280px; /* Bild füllt die Höhe */
+  object-fit: cover; /* Skaliert das Bild, ohne Verzerrung */
+  display: block;
+  margin-top: 19px;
+}
+
+
+.headline{
+  margin-left: 50px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-family: arial;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 600px;
+  color: #333;
+}
+
+#about{
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+   font-family: arial;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+   font-family: arial;
+   margin-left: 50px;
+   margin-top: 65px;
+}
+
+
+.text-bolder{
+font-size: 18px;
+margin-bottom: 10px;
+font-weight: 600;
+color: #333;
+ font-family: arial;
+ margin-left: 50px;
+}
+
+p {
+  color: #767676;
+  margin-bottom: 15px;
+  margin-right: 50px;
+}
+
+.learn-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  /* text-decoration: underline; */
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 40px;
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Inhalt horizontal zentrieren */
+  align-items: center; /* Inhalt vertikal zentrieren */
+  color: #333;
+  text-align: center; /* Text zentrieren */
+}
+
+footer p {
+  margin: 0; /* Entfernt den Standardabstand */
+  padding: 16px 50px;
+}
+
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p{
+  color: #333;
+}
+
+
+.opening-hours, .tickets {
+  display: flex;
+}
+
+
+.hours, .price {
+  flex: 1; /* Nimmt denselben Platz ein wie .text-bolder */
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  color: #666;
+}
+
+
+
+.price{
+  margin-left: -34px; /* oder ein kleinerer Wert, z.B. 10px */
+}
+
+.tickets p.price br {
+  display: none; /* Versteckt die Zeilenumbrüche */
+}
+
+.tickets .text-bolder span {
+  display: inline-block; /* Zeigt jeden Eintrag als Blockelement an */
+  padding: 5px 0; /* Abstand innen für die Einträge */
+  border-bottom: 1px solid #ddd; /* Linie unter jedem Eintrag */
+  width: 100%; /* Zwingt die Spalten, den gesamten verfügbaren Platz zu füllen */
+}
+.tickets .price span {
+  display: inline-block; /* Zeigt jeden Eintrag als Blockelement an */
+  padding: 5px 0; /* Abstand innen für die Einträge */
+  width: 100%; /* Zwingt die Spalten, den gesamten verfügbaren Platz zu füllen */
+}
+
+
+
+.opening-hours p.hours br {
+  display: none; /* Versteckt die Zeilenumbrüche */
+}
+
+.opening-hours .text-bolder span {
+  display: block; /* Zeigt jeden Eintrag als Blockelement an */
+  padding: 5px 0; /* Abstand innen für die Einträge */
+  border-bottom: 1px solid #ddd; /* Linie unter jedem Eintrag */
+  width: 360px; /* Zwingt die Spalten, den gesamten verfügbaren Platz zu füllen */
+}
+.opening-hours .hours span {
+  display: inline-block; /* Zeigt jeden Eintrag als Blockelement an */
+  padding: 5px 0; /* Abstand innen für die Einträge */
+  width: 100%; /* Zwingt die Spalten, den gesamten verfügbaren Platz zu füllen */
+}
+
+
+.opening-hours {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+
+.hours {
+  flex: 1; /* Gleicher Platz wie .text-bolder */
+  font-size: 18px;
+  margin: 0; /* Entfernt jegliche Abstände */
+  font-weight: 400;
+  color: #666;
+  margin-left: -350px; /* Verschiebt die gesamte Sektion nach links */
+}
+
+.hours span{
+  margin-left: 310px;
+}
+
+
+.museum-plan-img{
+  margin: 18px 0 17px 50px;
+  width: 50%;
+  height: 800px;
+}
+
+.exhibition,
+.opening-hours,
+.tickets {
+  overflow: hidden; /* Verhindert das Überlaufen */
+}
+
+.adresse{
+  font-weight: 600;
+}
